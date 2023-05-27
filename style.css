@@ -1,0 +1,139 @@
+/* --------------------base------------------------------------------*/
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item{
+    width: 35%;
+    margin: 2px;
+   
+    height: 100%;
+}
+h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*----------------------------------------reto 1-----------------------------------------*/
+.dropdown{
+    width: 200px;
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+.title_drop{
+    border: 1px solid black;
+    margin-bottom: 3px;
+}
+
+.section_drop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 10px;  
+    
+}
+.caja1{
+    display:none;
+
+}
+
+.sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.sect:hover{
+    background-color: rgb(216, 216, 242);
+    border: 1px solid black;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/* -------------------reto 2 ---------------------------------------------*/
+.container{
+    text-align: justify;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.box__title{
+    border: 1px solid black ;
+}
+.box__parrafo{
+    border: 1px solid black ;
+    display: none;
+}
+.box__parrafo.is_active{
+display:flex
+}
+/*--------------------------------------------------------------------------*/
+
+/* ------------------------------reto 3-------------------------------------*/
+.aside{
+    margin-top: 20px;
+
+}
+.ventana{
+    width: 100px;
+    height: 50px;
+
+}
+.form{
+    
+   
+}
+.sectionform{
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+   
+}
+.div1{
+    height: 40px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.div2{
+    height: 40px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.sectionform2{
+    display: flex;
+    gap: 2px;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center; 
+
+}
+.item1{
+background-color: brown;
+width: 200px;
+height: 35px;
+border-radius: 5px;
+text-align: center;
+color: white;
+font-size: 10px;
+border: none;
+}
+.item2{
+border: none;
+background-color: blueviolet;
+width: 200px;
+height: 35px;
+border-radius: 5px;
+text-align: center;
+color: white;
+font-size: 10px;
+}
