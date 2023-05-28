@@ -74,14 +74,16 @@ ventana.addEventListener('click',()=>{
         section2.appendChild(item1)
         section2.appendChild(item2)
         aside.appendChild(html)
+        ventana.setAttribute("disabled", "")
 
         document.querySelector('.item1').addEventListener('click',(e)=>{
             const el=e.target;
             const lis=el.parentNode, lit=lis.parentNode,sect=lit.parentNode ,padre=sect.parentNode;
             padre.removeChild(sect)
+            ventana.removeAttribute("disabled")
         })
     }else{
-       console.log("cierre la ventana")
+       ventana.setAttribute("disabled", "")
     } 
    });
     
