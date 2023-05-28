@@ -47,21 +47,19 @@ const aside=document.querySelector('.aside')
 ventana.addEventListener('click',()=>{
 
    document.querySelectorAll('aside').forEach(element => {
-    if (element!==''){
-        let html=document.createElement('html')
 
+    if (element.childNodes.length===0){
+        let html=document.createElement('section')
         let section=document.createElement('section')
-        let div=document.createElement('div')
-        div.textContent='modal title'
-        let div2=document.createElement('div')
-        div2.textContent='modal body text goes here'
+        let div=document.createElement('input')
+        div.setAttribute('placeholder','title model')
+        let div2=document.createElement('input')
+        div2.setAttribute('placeholder','modal body text goes here')
         let section2=document.createElement('section')
-    
         let item1=document.createElement('button')
         item1.textContent='Close'
         let item2=document.createElement('button')
         item2.textContent='Save changes'
-    
         html.classList.add('form')
         div.classList.add('div1')
         div2.classList.add('div2')
@@ -69,37 +67,22 @@ ventana.addEventListener('click',()=>{
         section2.classList.add('sectionform2')
         item1.classList.add('item1')
         item2.classList.add('item2')
-        
-    
         html.appendChild(section)
         section.appendChild(div)
         section.appendChild(div2)
         section.appendChild(section2)
         section2.appendChild(item1)
         section2.appendChild(item2)
-        
         aside.appendChild(html)
-        document.querySelector('.item1').addEventListener('click',()=>{
-            alert("asdas")
+
+        document.querySelector('.item1').addEventListener('click',(e)=>{
+            const el=e.target;
+            const lis=el.parentNode, lit=lis.parentNode,sect=lit.parentNode ,padre=sect.parentNode;
+            padre.removeChild(sect)
         })
-
-
-    }if (element==' '){
-        alert("sss")
-
-    }
-    
+    }else{
+       console.log("cierre la ventana")
+    } 
    });
     
 });
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------------------------*/
